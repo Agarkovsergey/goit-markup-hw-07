@@ -1,0 +1,44 @@
+.header-address {
+  font-style: normal;
+  display: flex;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  .list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .link {
+    display: inline-flex;
+    padding: 32px 0;
+    color: $secondary-text-color;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color 250ms $timing-func;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+.header-icon {
+  margin-right: 10px;
+  fill: $secondary-text-color;
+  transition: fill 250ms $timing-func;
+}
+.icon-message {
+  width: 16px;
+  height: 12px;
+}
+.icon-phone {
+  width: 10px;
+  height: 16px;
+}
+.link-message:hover .icon-message,
+.link-message:focus .icon-message,
+.link-phone:hover .icon-phone,
+.link-phone:focus .icon-phone {
+  fill: $accent-color;
+}

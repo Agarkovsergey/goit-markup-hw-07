@@ -1,0 +1,59 @@
+/* clients-block */
+.clients-block {
+  padding: 94px 0;
+}
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $logo-color;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+  color: $secondary-text-color;
+  transition: border-color 250ms $timing-func;
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+}
+.icon-client {
+  fill: currentColor;
+  transition: fill 250ms $timing-func;
+}
+.icon-logo {
+  &-1 {
+    width: 44.27px;
+    height: 49.23px;
+  }
+  &-2 {
+    width: 40px;
+    height: 52px;
+  }
+  &-3 {
+    width: 41px;
+    height: 42.6px;
+  }
+  &-4 {
+    width: 79.66px;
+    height: 42.02px;
+  }
+  &-5 {
+    width: 59px;
+    height: 47px;
+  }
+  &-6 {
+    width: 88.48px;
+    height: 45.44px;
+  }
+}
+.client-link {
+  &:hover .icon-client,
+  &:focus .icon-client {
+    fill: $accent-color;
+  }
+}

@@ -1,0 +1,72 @@
+/* team-block */
+.team-block {
+  background-color: $secondary-background-color;
+  padding: 94px 0;
+  .list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .card-container {
+    background: $primary-background-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+  }
+  .employee-img {
+    margin-bottom: 30px;
+  }
+  .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+  .post {
+    color: $secondary-text-color;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .employee-social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+}
+.employee-card:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 1em;
+}
+.employee-item:not(:nth-child(4)) {
+  margin-right: 10px;
+}
+.employee-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  color: $secondary-text-color;
+  background-color: $white-color;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms $timing-func;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+.employee-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  transition: fill 250ms $timing-func;
+}
+.employee-link:hover .employee-icon,
+.employee-link:focus .employee-icon {
+  fill: $white-color;
+}
